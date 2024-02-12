@@ -10,11 +10,11 @@
 
 .itemWithList svg {
 	position: absolute;
-	transform: rotate(180deg);
+	transform: rotate(90deg);
 	transition: 0.3s;
 	left: -12px;
 }
 
 .itemWithList span.active svg {
-	transform: rotate(0deg);
+	transform: rotate(180deg);
 }

@@ -12,8 +12,12 @@ const ItemWithList = ({ item }) => {
 			<span
 				className={`${listIsOpen ? classes.active : ''}`}
 				onClick={() => setListIsOpen((prev) => !prev)}>
-				<Icon icon='ep:arrow-up-bold' width={10} />
-				{`${item.name}(${item.price})`}
+				<Icon
+					icon='ep:arrow-up-bold'
+					width={10}
+					color={listIsOpen ? 'black' : '#a8a8a8'}
+				/>
+				{`${item.name}`}
 			</span>
 			{listIsOpen && <MyNestedList list={item.items} />}
 		</li>

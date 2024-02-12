@@ -42,7 +42,7 @@ function App() {
 
 	useEffect(() => {
 		async function getAllData() {
-			const response = await fetch('/data.json');
+			const response = await fetch('/tz-nestedlist/data.json');
 			const result = await response.json();
 
 			setServices(result.services);
