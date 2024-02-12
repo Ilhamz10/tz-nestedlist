@@ -1,0 +1,20 @@
+.itemWithList {
+	position: relative;
+}
+
+.itemWithList span {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.itemWithList svg {
+	position: absolute;
+	transform: rotate(180deg);
+	transition: 0.3s;
+	left: -12px;
+}
+
+.itemWithList span.active svg {
+	transform: rotate(0deg);
+}
